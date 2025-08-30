@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvi Dagade - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- ===== Header / Navbar ===== -->
+    <header>
+        <nav>
+            <h2 class="logo">Tanvi Dagade</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> <!-- ===== Hero Section ===== -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Tanvi <span class="highlight"></span></h1>
+            <p>Aspiring <strong>Software Engineer</strong> | Java Developer | Web Enthusiast</p> <a href="#projects"
+                class="btn">View My Work</a>
+        </div>
+    </section> <!-- ===== Education Section ===== -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Bachelor’s in Computer Engineering</h3>
+                <p>Mumbai University | 2022–2026 | CGPA: 8.62</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Class XII</h3>
+                <p>Maharashtra State Board | 2020–2022 | 86.5%</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Class X</h3>
+                <p>Maharashtra State Board | 2019–2020 | 95.4%</p>
+            </div>
+        </div>
+    </section> <!-- ===== Skills Section ===== -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2> <!-- Technical Skills -->
+        <h3 class="sub-title">Technical Skills</h3>
+        <div class="skills-container">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">C Programming</div>
+        </div> <!-- Soft Skills -->
+        <h3 class="sub-title">Soft Skills</h3>
+        <div class="skills-container">
+            <div class="skill-card">Leadership</div>
+            <div class="skill-card">Problem Solving</div>
+            <div class="skill-card">Teamwork</div>
+            <div class="skill-card">Quick Learner</div>
+            <div class="skill-card">Time Management</div>
+        </div>
+    </section> <!-- ===== Projects Section ===== -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Personal Finance Manager</h3>
+                <p>Java + SQLite app for income, expenses, budgets, CSV export, and alerts.</p>
+            </div>
+            <div class="project-card">
+                <h3>Hotel Management System</h3>
+                <p>Java-based food ordering system with modular design for scalability.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive portfolio using HTML, CSS, JS; hosted on GitHub Pages.</p>
+            </div>
+        </div>
+    </section> <!-- ===== Contact Section ===== -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm"> <input type="text" name="name" placeholder="Your Name" required> <input type="email"
+                name="email" placeholder="Your Email" required> <textarea name="message" placeholder="Your Message"
+                required></textarea> <button type="submit" class="btn">Send</button> </form>
+        <p id="formMessage" class="form-msg"></p>
+    </section> <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2025 Tanvi Dagade | Portfolio Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
