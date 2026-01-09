@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Finance Manager | Tanvi Dagade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAIN PORTFOLIO CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* ===== HERO ===== */
+        .project-hero {
+            max-width: 900px;
+            margin: 70px auto 40px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #141414, #886123);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .project-hero p {
+            color: #bdbdbd;
+            font-size: 1.05rem;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* ===== CONTENT ===== */
+        .content-box {
+            max-width: 900px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .content-box h2 {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 1.7rem;
+            background: linear-gradient(90deg, #141414, #886123);
+        }
+
+        .content-box p {
+            color: #d0d0d0;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* ===== BULLETS (PERMANENT FIX) ===== */
+        .content-box ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 24px;
+            margin: 0;
+        }
+
+        .content-box ul li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* ===== BACK BUTTON ===== */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(90deg, #141414, #886123);
+            transition: transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-6px);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 600px) {
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+
+            .content-box {
+                margin: 35px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Tanvi Dagade</h2>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero reveal">
+        <h1>Personal Finance Manager</h1>
+        <p>
+            A Java console-based application for managing income, expenses, monthly budgets,
+            and exporting financial data using SQLite.
+        </p>
+
+        <div class="tech-badges">
+            <span>Java</span>
+            <span>SQLite</span>
+            <span>JDBC</span>
+            <span>OOP</span>
+            <span>File Handling</span>
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="content-box reveal">
+        <h2>Problem Statement</h2>
+        <p>
+            Managing personal finances manually or using unstructured methods often
+            results in incomplete records, poor expense categorization, and lack of
+            budget control. Without a reliable offline system, users find it difficult
+            to track income, analyze spending patterns, and maintain consistent financial
+            discipline over time.
+        </p>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="content-box reveal">
+        <h2>Solution</h2>
+        <p>
+            This project provides a menu-driven Java application that records transactions,
+            categorizes them, stores data persistently using SQLite, and monitors budgets
+            with automatic warnings.
+        </p>
+    </section>
+
+    <section class="content-box reveal">
+        <h2>Why This Project Matters</h2>
+        <p>
+            This project helped me bridge the gap between theoretical Java concepts and real-world
+            application development. By working with persistent data storage, financial logic,
+            and structured program flow, I gained practical experience in building reliable
+            and maintainable software systems. It also strengthened my understanding of how
+            small design decisions impact usability and data accuracy in everyday applications.
+        </p>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="content-box reveal">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Developed income and expense tracking with structured transaction management</li>
+            <li>Implemented category-based organization for financial records</li>
+            <li>Designed monthly budget setup with real-time limit monitoring</li>
+            <li>Built an automatic budget warning mechanism to prevent overspending</li>
+            <li>Enabled update and modification of existing financial transactions</li>
+            <li>Implemented category renaming for flexible data management</li>
+            <li>Generated complete financial summaries for better analysis</li>
+            <li>Implemented CSV export functionality for external data usage</li>
+            <li>Integrated persistent data storage using SQLite and JDBC</li>
+            <li>Added functionality to reset and reinitialize financial data</li>
+        </ul>
+
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="content-box reveal">
+        <h2>What I Learned</h2>
+        <ul>
+            <li>Strengthened understanding of JDBC for database connectivity with SQLite</li>
+            <li>Implemented CRUD operations using PreparedStatements</li>
+            <li>Applied Object-Oriented Programming principles for clean code structure</li>
+            <li>Handled file export operations using Java FileWriter</li>
+            <li>Designed scalable, menu-driven console applications</li>
+            <li>Improved input validation and exception handling techniques</li>
+        </ul>
+
+    </section>
+
+    <!-- FUTURE -->
+    <section class="content-box reveal">
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li>JavaFX-based graphical user interface</li>
+            <li>Advanced financial analytics</li>
+            <li>User authentication and profiles</li>
+            <li>Cloud-based backup support</li>
+        </ul>
+
+        <a href="../index.html#projects" class="back-btn">← Back to Projects</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Tanvi Dagade</p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".reveal");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>
