@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Game | Tanvi Dagade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAIN PORTFOLIO CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* ===== HERO ===== */
+        .project-hero {
+            max-width: 900px;
+            margin: 70px auto 40px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #141414, #886123);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .project-hero p {
+            color: #bdbdbd;
+            font-size: 1.05rem;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* ===== CONTENT ===== */
+        .content-box {
+            max-width: 900px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .content-box h2 {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 1.7rem;
+            background: linear-gradient(90deg, #141414, #886123);
+        }
+
+        .content-box p {
+            color: #d0d0d0;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* ===== BULLETS (PERMANENT FIX) ===== */
+        .content-box ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 24px;
+            margin: 0;
+        }
+
+        .content-box ul li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* ===== BACK BUTTON ===== */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(90deg, #141414, #886123);
+            transition: transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-6px);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 600px) {
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+
+            .content-box {
+                margin: 35px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Tanvi Dagade</h2>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero reveal">
+        <h1>Web Game</h1>
+        <p>
+           A browser-based interactive web game developed using HTML, CSS, and JavaScript 
+           that provides engaging gameplay through dynamic visuals, user interactions, and real-time 
+           score tracking.
+        </p>
+
+        <div class="tech-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="content-box reveal">
+        <h2>Problem Statement</h2>
+        <p>
+            Traditional learning of web technologies often lacks practical engagement and real-time 
+            interaction. Beginners find it challenging to apply HTML, CSS, and JavaScript concepts in 
+            an interactive environment that demonstrates logic building and event-driven programming.
+        </p>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="content-box reveal">
+        <h2>Solution</h2>
+        <p>
+            This project provides an interactive web game that uses JavaScript for game logic, 
+            HTML for structure, and CSS for styling and animations, allowing users to play the game 
+            directly in the browser without additional installations.
+        </p>
+    </section>
+
+    <section class="content-box reveal">
+        <h2>Why This Project Matters</h2>
+        <p>
+            The Web Game project helps in understanding how front-end technologies work together 
+            to create interactive applications. It enhances logical thinking, improves user experience 
+            design, and demonstrates real-time interaction handling in web development.
+        </p>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="content-box reveal">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Developed interactive gameplay using JavaScript</li>
+<li>Implemented real-time score tracking</li>
+<li>Used event handling for user interactions</li>
+<li>Designed responsive game layout using HTML and CSS</li>
+<li>Added animations and visual effects using CSS</li>
+<li>Implemented game restart and reset functionality</li>
+<li>Handled win and loss conditions programmatically</li>
+<li>Ensured smooth gameplay across devices</li>
+<li>Optimized performance for browser execution</li>
+<li>Maintained clean and modular front-end code</li>
+
+        </ul>
+
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="content-box reveal">
+        <h2>What I Learned</h2>
+        <ul>
+            <li>Strengthened understanding of JavaScript logic and events</li>
+<li>Implemented DOM manipulation techniques</li>
+<li>Applied CSS animations and transitions</li>
+<li>Improved problem-solving and game logic skills</li>
+<li>Enhanced UI/UX design for interactive applications</li>
+<li>Learned to integrate styling with functional logic</li>
+        </ul>
+
+    </section>
+
+    <!-- FUTURE -->
+    <section class="content-box reveal">
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li>Multiple difficulty levels</li>
+<li>Sound effects and background music</li>
+<li>Leaderboard and high-score tracking</li>
+<li>Mobile-optimized gameplay controls</li>
+<li>Multiplayer mode support</li>
+<li>Progressive Web App (PWA) support</li>
+        </ul>
+
+        <a href="../index.html#projects" class="back-btn">← Back to Projects</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Tanvi Dagade</p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".reveal");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>

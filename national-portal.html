@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>National Portal Clone | Tanvi Dagade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAIN PORTFOLIO CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* ===== HERO ===== */
+        .project-hero {
+            max-width: 900px;
+            margin: 70px auto 40px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #141414, #886123);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .project-hero p {
+            color: #bdbdbd;
+            font-size: 1.05rem;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* ===== CONTENT ===== */
+        .content-box {
+            max-width: 900px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .content-box h2 {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 1.7rem;
+            background: linear-gradient(90deg, #141414, #886123);
+        }
+
+        .content-box p {
+            color: #d0d0d0;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* ===== BULLETS (PERMANENT FIX) ===== */
+        .content-box ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 24px;
+            margin: 0;
+        }
+
+        .content-box ul li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* ===== BACK BUTTON ===== */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(90deg, #141414, #886123);
+            transition: transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-6px);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 600px) {
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+
+            .content-box {
+                margin: 35px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Tanvi Dagade</h2>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero reveal">
+        <h1>National Portal Clone</h1>
+        <p>
+            A responsive front-end web application that replicates the
+            structure and functionality of the National Portal of India using
+            HTML, CSS, and JavaScript to demonstrate modern web development
+            and UI design practices.
+        </p>
+
+        <div class="tech-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="content-box reveal">
+        <h2>Problem Statement</h2>
+        <p>
+            Government portals often contain vast information but can be complex
+            to navigate and visually overwhelming. Beginners learning web development
+            face challenges in understanding how large-scale informational websites
+            are structured, styled, and made interactive using core web technologies.
+        </p>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="content-box reveal">
+        <h2>Solution</h2>
+        <p>
+            This project provides a front-end clone of the National Portal that focuses
+            on clean layout design, responsive structure, and interactive elements using
+            HTML, CSS, and JavaScript to simulate real-world government website behavior.
+        </p>
+    </section>
+
+    <section class="content-box reveal">
+        <h2>Why This Project Matters</h2>
+        <p>
+            The National Portal Clone helps in understanding how large informational websites
+            are designed and implemented. It strengthens front-end development skills by working
+            with real-world layouts, accessibility considerations, and user-friendly navigation
+            patterns.
+        </p>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="content-box reveal">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Designed responsive layout using HTML5 semantic elements</li>
+            <li>Implemented structured styling using CSS for consistent UI</li>
+            <li>Developed interactive components using JavaScript</li>
+            <li>Created navigation menus and dropdown sections</li>
+            <li>Implemented banner sections and content grids</li>
+            <li>Ensured cross-device compatibility with responsive design</li>
+            <li>Improved user experience with hover effects and transitions</li>
+            <li>Organized content sections similar to the official portal</li>
+            <li>Focused on accessibility-friendly font sizes and contrast</li>
+            <li>Maintained clean and readable code structure</li>
+        </ul>
+
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="content-box reveal">
+        <h2>What I Learned</h2>
+        <ul>
+            <li>Strengthened understanding of HTML5 semantic structure</li>
+            <li>Improved CSS layout skills using Flexbox and Grid</li>
+            <li>Implemented basic interactivity using JavaScript</li>
+            <li>Understood responsive design principles</li>
+            <li>Enhanced UI consistency and visual hierarchy</li>
+            <li>Learned how large-scale websites organize content</li>
+
+        </ul>
+
+    </section>
+
+    <!-- FUTURE -->
+    <section class="content-box reveal">
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li>Integration with backend services for dynamic content</li>
+            <li>Search functionality for better information access</li>
+            <li>Multilingual language support</li>
+            <li>Improved accessibility features (ARIA labels)</li>
+            <li>Dark mode support</li>
+            <li>Performance optimization for faster loading</li>
+        </ul>
+
+        <a href="../index.html#projects" class="back-btn">← Back to Projects</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Tanvi Dagade</p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".reveal");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>

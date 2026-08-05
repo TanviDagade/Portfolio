@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Think Smart | Tanvi Dagade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAIN PORTFOLIO CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* ===== HERO ===== */
+        .project-hero {
+            max-width: 900px;
+            margin: 70px auto 40px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 16px;
+            background: linear-gradient(90deg, #141414, #886123);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .project-hero p {
+            color: #bdbdbd;
+            font-size: 1.05rem;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* ===== CONTENT ===== */
+        .content-box {
+            max-width: 900px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .content-box h2 {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 1.7rem;
+            background: linear-gradient(90deg, #141414, #886123);
+        }
+
+        .content-box p {
+            color: #d0d0d0;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .content-box ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 24px;
+        }
+
+        .content-box li {
+            margin-bottom: 12px;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(90deg, #141414, #886123);
+            transition: transform .3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-6px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: .8s;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media(max-width:600px) {
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Tanvi Dagade</h2>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="project-hero reveal">
+
+        <h1>Think Smart: Smart Learning Platform</h1>
+
+        <p>
+            A full-stack learning platform that helps students solve mathematics
+            problems using text input or uploaded images while providing
+            AI-powered doubt solving, learning resources, and progress tracking.
+        </p>
+
+        <div class="tech-badges">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+    </section>
+
+
+    <!-- PROBLEM -->
+
+    <section class="content-box reveal">
+
+        <h2>Problem Statement</h2>
+
+        <p>
+            Students often struggle to understand mathematical concepts because
+            they lack instant guidance, personalized learning resources, and an
+            efficient way to clarify doubts. Traditional learning platforms rarely
+            combine problem solving, AI assistance, and progress monitoring in one
+            place, making learning less interactive and more time-consuming.
+        </p>
+
+    </section>
+
+
+    <!-- SOLUTION -->
+
+    <section class="content-box reveal">
+
+        <h2>Solution</h2>
+
+        <p>
+            Think Smart provides an integrated learning platform where students can
+            solve mathematical problems through text or image uploads, receive
+            AI-assisted explanations, practice using flashcards and quizzes, and
+            monitor their academic progress through detailed performance tracking.
+        </p>
+
+    </section>
+
+
+    <!-- WHY -->
+
+    <section class="content-box reveal">
+
+        <h2>Why This Project Matters</h2>
+
+        <p>
+            This project allowed me to gain practical experience in full-stack
+            development using Spring Boot, Java, MySQL, HTML, CSS, and JavaScript.
+            It strengthened my understanding of backend development, database
+            integration, REST APIs, and building responsive user interfaces while
+            solving a real-world educational problem.
+        </p>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="content-box reveal">
+
+        <h2>Key Features</h2>
+
+        <ul>
+
+            <li>Developed a smart math problem solver supporting both text input and image uploads.</li>
+
+            <li>Implemented step-by-step mathematical explanations for better concept understanding.</li>
+
+            <li>Built an AI Doubt Solver for interactive question answering and concept clarification.</li>
+
+            <li>Designed learning modules including flashcards, formula library, and practice tests.</li>
+
+            <li>Integrated student progress tracking to monitor learning performance.</li>
+
+            <li>Implemented secure user data management using Spring Boot and MySQL.</li>
+
+            <li>Created responsive frontend interfaces using HTML, CSS, and JavaScript.</li>
+
+            <li>Developed RESTful backend services for communication between frontend and database.</li>
+
+            <li>Designed a scalable architecture supporting future educational modules.</li>
+
+            <li>Focused on user-friendly navigation and interactive learning experience.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- LEARNINGS -->
+
+    <section class="content-box reveal">
+
+        <h2>What I Learned</h2>
+
+        <ul>
+
+            <li>Developed REST APIs using Spring Boot.</li>
+
+            <li>Integrated MySQL database with Java backend.</li>
+
+            <li>Improved understanding of MVC architecture.</li>
+
+            <li>Built responsive web interfaces using HTML, CSS, and JavaScript.</li>
+
+            <li>Implemented CRUD operations and backend validation.</li>
+
+            <li>Learned full-stack application development and project structuring.</li>
+
+            <li>Enhanced problem-solving skills while designing educational software.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- FUTURE -->
+
+    <section class="content-box reveal">
+
+        <h2>Future Enhancements</h2>
+
+        <ul>
+
+            <li>Voice-based AI tutor for interactive learning.</li>
+
+            <li>Personalized learning recommendations using AI.</li>
+
+            <li>Gamification with achievements and leaderboards.</li>
+
+            <li>Live teacher-student collaboration sessions.</li>
+
+            <li>Mobile application for Android and iOS.</li>
+
+        </ul>
+
+        <a href="../index.html#projects" class="back-btn">
+            ← Back to Projects
+        </a>
+
+    </section>
+
+
+    <footer>
+        <p>© 2025 Tanvi Dagade</p>
+    </footer>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const elements = document.querySelectorAll(".reveal");
+
+            const observer = new IntersectionObserver(entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                    }
+
+                });
+
+            }, { threshold: .15 });
+
+            elements.forEach(el => observer.observe(el));
+
+        });
+
+    </script>
+
+</body>
+
+</html>
